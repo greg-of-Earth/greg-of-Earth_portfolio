@@ -65,7 +65,7 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
                             About Me
                         </h1>
                         <p className="text-slate-700 leading-relaxed">
-                            I'm Gregory Calderon, a software enthusiast and current Master’s student at California State University, Northridge. I’m passionate about exploring Machine Learning and Artificial Intelligence, and I have hands-on experience across Embedded and Autonomous Systems, Full-Stack Application Development, and Data Analysis.
+                            I&apos;m Gregory Calderon, a software enthusiast and current Master’s student at California State University, Northridge. I’m passionate about exploring Machine Learning and Artificial Intelligence, and I have hands-on experience across Embedded and Autonomous Systems, Full-Stack Application Development, and Data Analysis.
                         </p>
                     </div>
                 )}
