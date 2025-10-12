@@ -26,7 +26,7 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
   return (
     <main className="flex-1 flex flex-col items-center justify-start md:justify-center w-full px-4 sm:px-6 bg-gray-50 text-slate-800 mt-[6px]">
         <nav className="w-full border-b border-gray-300 mb-6 mt-[6vh] overflow-x-auto no-scrollbar">
-            <div className="flex flex-nowrap sm:flex-wrap md:justify-evenly px-2">
+            <div className="flex flex-nowrap sm:flex-wrap sm:space-x-2 md:justify-evenly px-2">
             {TABS.map((tab) => (
                 <button
                     key={tab}
