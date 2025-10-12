@@ -13,7 +13,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
                 alt="Profile"
                 width={148}
                 height={148}
-                className="rounded-full mb-4 md:w-48 md:h-48 lg:w-56 lg:h-56"
+                className="rounded-full mb-4 md:w-48 md:h-48 lg:w-64 lg:h-64"
             />        
             
             <h2 className="text-xl font-semibold text-white md:text-2xl lg:text-3xl">
