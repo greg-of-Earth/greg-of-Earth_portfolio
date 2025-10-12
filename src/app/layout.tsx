@@ -9,7 +9,7 @@ export default function RootLayout({ children } : { children: React.ReactNode })
     <html lang="en">
       <body>
         <div className="flex flex-col md:flex-row min-h-screen w-full">
-          <Sidebar className="w-full md:w-1/3 border-solid-black"/>
+          <Sidebar />
 
           <MainContent className="flex-1 w-full"/>
             {children}
