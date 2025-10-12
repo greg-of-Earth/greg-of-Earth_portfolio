@@ -66,6 +66,7 @@ const SkillsTab: React.FC = () => {
     <div>
     {/* Top level */}
         <nav className="flex space-x-8 border-b border-gray-300 mb-6">
+            <div className="flex flex-nowrap space-x-2 px-2">
             {SUB_TABS.map((tab) => (
                 <button
                     key={tab}
@@ -82,8 +83,9 @@ const SkillsTab: React.FC = () => {
                     )}
                 </button>
             ))}
+            </div> 
         </nav>
-
+          
         {/* Skills */}
         <SkillCarousel skillGroups={skillGroups}/>
     </div>
