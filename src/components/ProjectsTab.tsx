@@ -29,6 +29,13 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
             tech: ["Vanilla JS", "Chart.js", "HTML5", "FirebaseDB"],
             live: "https://funspacefacts.netlify.app",
             github: "https://github.com/greg-of-Earth/spaceFun"
+        },
+        {
+            title: "Task Manager",
+            description: "A task manager application. Add, mark complete and delete tasks using local storage. CRUD application",
+            tech: ["React", "Javascript", "HTML5", "CSS"],
+            live: "https://chorechecker.netlify.app",
+            github: "https://github.com/greg-of-Earth/taskManager"
         }
     ],
     "Data Analysis": [
