@@ -31,7 +31,7 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
                 <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`relative pb-2 text-lg font-medium transition-colors ${activeTab === tab ? "text-cyan-600" : "text-gray-500 hover:text-cyan-400"}`}
+                    className={`flex-1 relative pb-2 text-small sm:text-base md:text-lg font-medium transition-colors ${activeTab === tab ? "text-cyan-600" : "text-gray-500 hover:text-cyan-400"}`}
                 >
                     {tab}
                     {activeTab === tab && (
