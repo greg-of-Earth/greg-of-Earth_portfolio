@@ -7,7 +7,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
     <aside className={`flex-shrink-0 h-screen bg-gray-700 border-r border-cyan-400 ${className || ""}`}>
-        <div className="flex flex-col items-center md:mt-[50%] text-center">
+        <div className="flex flex-col items-center sm:mt-[20%] md:mt-[50%] text-center">
             <Image
                 src="/profile.jpg"
                 alt="Profile"
