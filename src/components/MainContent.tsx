@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence} from "framer-motion";
 import ProjectsTab from "./ProjectsTab";
 import EducationTab from "./EducationTab";
@@ -16,6 +16,15 @@ const TABS = ["About", "Projects", "Education", "Skills", "Awards"];
 
 const MainContent: React.FC<MainContentProps> = ( { className }) => {
     const [activeTab, setActiveTab] = useState('About');
+    const [underlineTab, setUnderlineTab] = useState('About');
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setUnderlineTab(activeTab);
+        }, 1050);
+
+        return () => clearTimeout(timer);
+        }, [activeTab]);
 
     // animations variants
     const variants = {
@@ -27,19 +36,19 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
   return (
     <main className="flex-1 flex flex-col items-center justify-start md:justify-center w-full px-4 sm:px-6 bg-gray-50 text-slate-800 mt-[6px]">
         <nav className="w-full border-b border-gray-300 mb-6 mt-[6vh] overflow-x-auto no-scrollbar">
-            <div className="flex justify-evenly w-full">
+            <div className="flex flex-1 justify-evenly w-full">
             {TABS.map((tab) => (
                 <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
                     className={`relative text-center relative pb-2 text-sm sm:text-base md:text-lg font-medium transition-colors ${activeTab === tab ? "text-cyan-600" : "text-gray-500 hover:text-cyan-400"}`}
                 >
-                    <span className="relative z-10">{tab}</span>
+                    {tab}
                     {activeTab === tab && (
                         <motion.div
                             layoutId="underline"
-                            className="absolute left-1/2 -translate-x-1/2 -bottom-[1px] w-2/3 h-[3px] bg-cyan-500 rounded-full"
-                            // animate={{ opacity: activeTab === tab ? 1 : 0 }}
+                            className="absolute left-1/2 -translate-x-1/2 -bottom-[1px] w-2/3 h-[3px] bg-cyan-500 rounded-full overflow-x-visible"
+                            animate={{ opacity: underlineTab === tab ? 1 : 0 }}
                             transition={{ type: "spring", stiffness: 350, damping: 30, mass: 0.6 }}
                         />
                     )}
