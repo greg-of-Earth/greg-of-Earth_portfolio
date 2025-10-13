@@ -27,6 +27,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         {
             title: "Social Network Clone",
             description: "A Twitter-like application with authentication, posts, and comments.",
+            image: "/twitter.png",
             tech: ["Next.js", "React", "Typescript", "Prisma", "MongoDB"],
             live: "https://socialnetter.netlify.app",
             github: "https://github.com/greg-of-Earth/socialNet"
@@ -34,6 +35,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         {
             title: "Space Fun",
             description: "An interactive space application focusing on key UI/UX methods that allows the user to explore the solar system and test their skills.",
+            video: "/spaceFun.MP4",
             tech: ["Vanilla JS", "Chart.js", "HTML5", "FirebaseDB"],
             live: "https://funspacefacts.netlify.app",
             github: "https://github.com/greg-of-Earth/spaceFun"
@@ -42,6 +44,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
             title: "Task Manager",
             description: "A task manager application. Add, mark complete and delete tasks using local storage. CRUD application.",
             tech: ["React", "Javascript", "HTML5", "CSS"],
+            video: "/todo.MP4",
             live: "https://chorechecker.netlify.app",
             github: "https://github.com/greg-of-Earth/taskManager"
         },
