@@ -36,6 +36,18 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
             tech: ["React", "Javascript", "HTML5", "CSS"],
             live: "https://chorechecker.netlify.app",
             github: "https://github.com/greg-of-Earth/taskManager"
+        },
+        {
+            title: "Hotel Reservation",
+            description: "The Hotel Reservation System is a desktop application built using PyQt for the graphical user interface (GUI) and SQL for data storage and management. It allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
+            tech: ["Python3", "PyQt5", "MySQL"],
+            github: "https://github.com/greg-of-Earth/COMP440_PROJ1"
+        },
+                {
+            title: "ADA Trivia Game",
+            description: "This project is an accessible version of the classic Who Wants to Be a Millionaire quiz game, designed specifically for visually impaired users. It integrates ADA-compliant accessibility features to ensure that all users, regardless of visual ability, can fully engage with the game experience. The game combines sound-based interactions, keyboard navigation, and screen-reader-friendly text output to create an inclusive and enjoyable quiz experience.",
+            tech: ["React", "Typescript", "HTML5", "CSS"],
+            github: "https://github.com/greg-of-Earth/TriviaGame"
         }
     ],
     "Data Analysis": [
@@ -43,7 +55,13 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
             title: "Exo-Stellar Debris Field Identification",
             description: "A research project conducted with NASA's JPL and the STEM Department at Los Angeles Mission College that analyzes data from several space-based telescopes including Spitzer and Gaia.",
             tech: ["Jupyter Notebook", "Python", "Pandas", "Numpy", "Matplotlib"],
-            github: "https://github.com/greg-of-Earth/StarDisk/tree/main"
+            github: "https://github.com/greg-of-Earth/StarDisk"
+        },
+        {
+            title: "Instacart Market Basket Analysis",
+            description: "Market Basket Analysis of Instacart data using Python to uncover product trends, department insights, and associations between items. Features visualizations, statistical analysis, and market basket mining. Demonstrates data cleaning, exploratory analysis, and machine learning techniques for real-world retail data.",
+            tech: ["Jupyter Notebook", "Python3", "Pandas", "Numpy", "Matplotlib", "Seaborn", "SciPy", "MLxtend"],
+            github: "https://github.com/greg-of-Earth/insta-ml-analysis"
         }
     ]
 }
