@@ -39,7 +39,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         },
         {
             title: "Hotel Reservation",
-            description: "The Hotel Reservation System is a desktop application built using PyQt for the graphical user interface (GUI) and SQL for data storage and management. It allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
+            description: "The Hotel Reservation System is a desktop application that allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
             tech: ["Python3", "PyQt5", "MySQL"],
             github: "https://github.com/greg-of-Earth/COMP440_PROJ1"
         },
