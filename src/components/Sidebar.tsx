@@ -1,4 +1,9 @@
+"use client"
+
 import Image from "next/image"
+import ResumeSelector from "./ResumeSelector";
+
+
 
 interface SidebarProps {
     className?: string;
@@ -7,7 +12,7 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ className }) => {
   return (
     <aside className={`flex-shrink-0  flex items-center md:min-h-screen w-full md:w-1/3 bg-gray-700 sm:border-b-6 md:border-b-0 md:border-r-6 border-cyan-400 flex items-center justify-center relative ${className || ""}`}>
-        <div className="flex flex-col items-center text-center md:mb-[15%] my-5">
+        <div className="flex flex-col items-center text-center md:mb-[5%] my-5">
             <Image
                 src="/profile.jpg"
                 alt="Profile"
@@ -27,6 +32,9 @@ const Sidebar: React.FC<SidebarProps> = ({ className }) => {
                 className="text-xs text-cyan-300 hover:text-cyan-400 transition-colors mt-1 md:text-sm lg:text-base">
                 greg87calderon@gmail.com
             </a>
+
+            <ResumeSelector />
+
         </div>
     </aside>
   )
