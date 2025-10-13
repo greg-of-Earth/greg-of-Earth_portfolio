@@ -16,15 +16,6 @@ const TABS = ["About", "Projects", "Education", "Skills", "Awards"];
 
 const MainContent: React.FC<MainContentProps> = ( { className }) => {
     const [activeTab, setActiveTab] = useState('About');
-    const [underlineTab, setUnderlineTab] = useState('About');
-
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setUnderlineTab(activeTab);
-        }, 1050);
-
-        return () => clearTimeout(timer);
-        }, [activeTab]);
 
     // animations variants
     const variants = {
@@ -46,9 +37,8 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
                     {tab}
                     {activeTab === tab && (
                         <motion.div
-                            layoutId="underline"
+                            layoutId="nav-underline"
                             className="absolute left-1/2 -translate-x-1/2 -bottom-[1px] w-2/3 h-[3px] bg-cyan-500 rounded-full overflow-x-visible"
-                            animate={{ opacity: underlineTab === tab ? 1 : 0 }}
                             transition={{ type: "spring", stiffness: 350, damping: 30, mass: 0.6 }}
                         />
                     )}
