@@ -59,7 +59,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         },
         {
             title: "Instacart Market Basket Analysis",
-            description: "Market Basket Analysis of Instacart data using Python to uncover product trends, department insights, and associations between items. Features visualizations, statistical analysis, and market basket mining. Demonstrates data cleaning, exploratory analysis, and machine learning techniques for real-world retail data.",
+            description: "Market Basket Analysis of Instacart data using Python to uncover product trends, department insights, and associations between items. Demonstrates data cleaning, exploratory analysis, and machine learning techniques for real-world retail data.",
             tech: ["Jupyter Notebook", "Python3", "Pandas", "Numpy", "Matplotlib", "Seaborn", "SciPy", "MLxtend"],
             github: "https://github.com/greg-of-Earth/insta-ml-analysis"
         }
