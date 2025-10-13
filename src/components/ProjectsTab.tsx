@@ -11,8 +11,14 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         {
             title: "Autonomous Delivery Drone",
             description: "Software lead in the development of a fully autonomous VTOL and conventional flight capable delivery and recovery RC drone",
-            tech: ["Python", "OpenCV", "RTOS", "Sensors"],
+            tech: ["STM32", "Python", "OpenCV", "RTOS", "Sensors"],
             github: "https://github.com/yourusername/drone-project"
+        },
+        {
+            title: "Motion Sensor Alarm",
+            description: "ESP32 Mini Motion Alarm: A compact motion detection system using ultrasonic and infrared sensors. Triggers buzzer and LED alerts when movement is detected. Demonstrates embedded programming, sensor integration, and real-time event handling.",
+            tech: ["ESP32", "C++", "Shift Register", "RTOS", "Sensors"],
+            github: "https://github.com/greg-of-Earth/motionAlarm"
         }
     ],
     "Full-Stack Applications": [
