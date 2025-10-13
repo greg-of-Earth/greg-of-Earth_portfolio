@@ -11,7 +11,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         {
             title: "Autonomous Delivery Drone",
             description: "Software lead in the development of a fully autonomous VTOL and conventional flight capable delivery and recovery RC drone",
-            video: "/aero.MP4",
+            video: "/aero2.MP4",
             tech: ["STM32", "Python", "OpenCV", "RTOS", "Sensors"],
             github: "https://github.com/yourusername/drone-project"
         },
@@ -62,12 +62,14 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         {
             title: "Exo-Stellar Debris Field Identification",
             description: "A research project conducted with NASA's JPL and the STEM Department at Los Angeles Mission College that analyzes data from several space-based telescopes including Spitzer and Gaia.",
+            image: "/starDisk.png",
             tech: ["Jupyter Notebook", "Python", "Pandas", "Numpy", "Matplotlib"],
             github: "https://github.com/greg-of-Earth/StarDisk"
         },
         {
             title: "Instacart Market Basket Analysis",
             description: "Market Basket Analysis of Instacart data using Python to uncover product trends, department insights, and associations between items. Demonstrates data cleaning, exploratory analysis, and machine learning techniques for real-world retail data.",
+            image: "/instaCart1.png",
             tech: ["Jupyter Notebook", "Python3", "Pandas", "Numpy", "Matplotlib", "Seaborn", "SciPy", "MLxtend"],
             github: "https://github.com/greg-of-Earth/insta-ml-analysis"
         }
