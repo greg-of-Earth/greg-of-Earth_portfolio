@@ -45,7 +45,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         },
                 {
             title: "ADA Trivia Game",
-            description: "This project is an accessible version of the classic Who Wants to Be a Millionaire quiz game, designed specifically for visually impaired users. It integrates ADA-compliant accessibility features to ensure that all users, regardless of visual ability, can fully engage with the game experience. The game combines sound-based interactions, keyboard navigation, and screen-reader-friendly text output to create an inclusive and enjoyable quiz experience.",
+            description: "This project is an accessible version of the classic Who Wants to Be a Millionaire quiz game, designed specifically for visually impaired users. It integrates ADA-compliant accessibility features to ensure that all users, regardless of visual ability, can fully engage with the game experience.",
             tech: ["React", "Typescript", "HTML5", "CSS"],
             github: "https://github.com/greg-of-Earth/TriviaGame"
         }
