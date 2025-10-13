@@ -46,7 +46,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
             >
                 {/* Preview Image */}
                 {projects[index].image ? (
-                <div className="relative w-full max-w-md aspect-[16/9] mb-4 rounded-xl overflow-hidden group">
+                <div className="relative w-full max-w-md aspect-[16/9] mb-2 rounded-xl overflow-hidden group">
                     <Image
                     src={projects[index].image}
                     alt={projects[index].title}
@@ -56,7 +56,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                     />
                 </div>
                 ) : projects[index].video ? (
-                <div className="relative w-full h-48 mb-4 rounded-xl overflow-hidden group">
+                <div className="relative w-full h-48 mb-2 rounded-xl overflow-hidden group">
                     <video
                     src={projects[index].video}
                     autoPlay
