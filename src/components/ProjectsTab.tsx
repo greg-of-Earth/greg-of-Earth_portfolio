@@ -45,13 +45,13 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         },
         {
             title: "Hotel Reservation",
-            description: "The Hotel Reservation System is a desktop application that allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
+            description: "Desktop application that allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
             tech: ["Python3", "PyQt5", "MySQL"],
             github: "https://github.com/greg-of-Earth/COMP440_PROJ1"
         },
                 {
             title: "ADA Trivia Game",
-            description: "This project is an accessible version of the classic Who Wants to Be a Millionaire quiz game, designed specifically for visually impaired users. It integrates ADA-compliant accessibility features to ensure that all users, regardless of visual ability, can fully engage with the game experience.",
+            description: "An accessible version of the classic Who Wants to Be a Millionaire quiz game, designed specifically for visually impaired users. It integrates ADA-compliant accessibility features to ensure that all users, regardless of visual ability, can fully engage with the game experience.",
             tech: ["React", "Typescript", "HTML5", "CSS"],
             github: "https://github.com/greg-of-Earth/TriviaGame"
         }
