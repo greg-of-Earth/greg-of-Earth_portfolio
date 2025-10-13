@@ -25,7 +25,7 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
     };
 
   return (
-    <main className="flex-1 flex flex-col items-center justify-start md:justify-center w-full px-4 sm:px-6 bg-gray-50 text-slate-800 mt-[6px]">
+    <main className="flex-1 flex flex-col items-center justify-start md:justify-center w-full px-4 sm:px-6 bg-gray-50 text-slate-800 mt-[6px] max-w-7xl mx-auto">
         <nav className="w-full border-b border-gray-300 mb-6 mt-[6vh] overflow-x-auto no-scrollbar">
             <div className="flex flex-1 justify-evenly w-full">
             {TABS.map((tab) => (
