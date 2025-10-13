@@ -6,17 +6,19 @@ import ProjectCarousel from "./ProjectCarousel";
 
 const SUB_TABS = ["Embedded Systems", "Full-Stack Applications", "Data Analysis"];
 
-const PROJECTS: Record<string, { title: string; description: string; tech: string[]; live?: string; github?: string }[]> = {
+const PROJECTS: Record<string, { title: string; description: string; tech: string[]; image?: string; video?: string; live?: string; github?: string }[]> = {
     "Embedded Systems": [
         {
             title: "Autonomous Delivery Drone",
             description: "Software lead in the development of a fully autonomous VTOL and conventional flight capable delivery and recovery RC drone",
+            video: "/aero.MP4",
             tech: ["STM32", "Python", "OpenCV", "RTOS", "Sensors"],
             github: "https://github.com/yourusername/drone-project"
         },
         {
             title: "Motion Sensor Alarm",
             description: "ESP32 Mini Motion Alarm: A compact motion detection system using ultrasonic and infrared sensors. Triggers buzzer and LED alerts when movement is detected. Demonstrates embedded programming, sensor integration, and real-time event handling.",
+            video: "/alarm.MP4",
             tech: ["ESP32", "C++", "Shift Register", "RTOS", "Sensors"],
             github: "https://github.com/greg-of-Earth/motionAlarm"
         }
