@@ -63,7 +63,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                     loop
                     muted
                     playsInline
-                    className="w-full h-48 object-contain md:object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-contain md:object-cover rounded-lg mb-2"
                     />
                 </div>
                 ) : null}
