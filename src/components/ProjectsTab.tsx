@@ -50,7 +50,8 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
         },
         {
             title: "Hotel Reservation",
-            description: "Desktop application that allows hotel staff or administrators to manage room bookings, guest information, check-ins, and check-outs efficiently through an intuitive desktop interface.",
+            description: "An interactive desktop application that lets users search and filter rooms by key parameters, explore details, and contribute reviews to help others.",
+            image: "/hotel.png",
             tech: ["Python3", "PyQt5", "MySQL"],
             github: "https://github.com/greg-of-Earth/COMP440_PROJ1"
         },
