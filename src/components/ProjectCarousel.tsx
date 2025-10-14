@@ -33,8 +33,6 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
             <ChevronLeft size={20} />
         </button>
 
-
-
         <AnimatePresence mode="wait">
             <motion.div
                 key={projects[index].title}
@@ -56,14 +54,14 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects }) => {
                     />
                 </div>
                 ) : projects[index].video ? (
-                <div className="relative w-full h-48 mb-2 rounded-xl overflow-hidden group">
+                <div className="relative w-full aspect-[16/9] mb-2 rounded-xl overflow-hidden group">
                     <video
                     src={projects[index].video}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className="w-full h-48 object-contain md:object-cover rounded-lg"
+                    className="w-full object-contain md:object-cover rounded-lg"
                     />
                 </div>
                 ) : null}
