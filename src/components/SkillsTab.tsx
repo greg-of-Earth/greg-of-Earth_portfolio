@@ -66,7 +66,7 @@ const SkillsTab: React.FC = () => {
     <div>
     {/* Top level */}
         <nav className="flex border-b border-gray-300 mb-6 no-scrollbar overflow-x-auto">
-            <div className="flex w-full justify-around items-center flex-nowrap">
+            <div className="flex w-full justify-around items-center flex-nowrap sm:text-sm">
             {SUB_TABS.map((tab) => (
                 <button
                     key={tab}
