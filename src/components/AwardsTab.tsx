@@ -49,7 +49,7 @@ const AwardsTab: React.FC = () => {
   return (
     <div>
         {/* Top-level navigation */}
-        <nav className="flex space-x-8 border-b border-gray-300 mb-6">
+        <nav className="flex w-full justify-around items-center flex-nowrap border-b border-gray-300 mb-6 flex">
         {SUB_TABS.map(tab => (
             <button
             key={tab}
