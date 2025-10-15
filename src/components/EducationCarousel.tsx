@@ -25,7 +25,7 @@ const EducationCarousel: React.FC<EducationCarouselProps> = ({ education }) => {
     const next = () => setIndex((i) => i === education.length - 1 ? 0 : i + 1);
 
     return (
-        <div className="relative w-full items-center justify-center px-12">
+        <div className="relative flex w-full items-center justify-center px-12">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={education[index].school}
@@ -33,7 +33,7 @@ const EducationCarousel: React.FC<EducationCarouselProps> = ({ education }) => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
                     transition={{ duration: 0.5 }}
-                    className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full max-w-md flex-shrink-0"
+                    className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full flex-shrink-0"
                 >
                     <div className="flex-shrink-0">
                         <Image

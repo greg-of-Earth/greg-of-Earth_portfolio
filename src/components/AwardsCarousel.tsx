@@ -24,7 +24,7 @@ const AwardsCarousel: React.FC<AwardsCarouselProps> = ({ awards }) => {
   if (awards.length === 0) return null;
 
   return (
-    <div className="relative w-full items-center justify-center px-12">
+    <div className="relative flex w-full items-center justify-center px-12">
       <AnimatePresence mode="wait">
         <motion.div
           key={awards[index].title}
@@ -32,7 +32,7 @@ const AwardsCarousel: React.FC<AwardsCarouselProps> = ({ awards }) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
-          className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full max-w-md flex-shrink-0"
+          className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full flex-shrink-0"
         >
           <h3 className="text-xl font-semibold text-cyan-600 mb-2">{awards[index].title}</h3>
           <p className="text-gray-700">{awards[index].description}</p>
