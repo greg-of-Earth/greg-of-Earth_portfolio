@@ -28,7 +28,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ skillGroups }) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -50 }}
           transition={{ duration: 0.5 }}
-          className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full max-w-md flex-shrink-0"
+          className="bg-white p-4 sm:p-6 rounded-2xl shadow-md w-full flex-shrink-0"
         >
           <h3 className="text-xl font-semibold text-cyan-600 mb-4">
             {skillGroups[index].category}
@@ -53,6 +53,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ skillGroups }) => {
       >
         <ChevronLeft size={20} />
       </button>
+      
       <button
         onClick={next}
         className="absolute right-0 top-1/2 -translate-y-1/2 bg-cyan-500 text-white p-2 rounded-full shadow hover:bg-cyan-600 transition"

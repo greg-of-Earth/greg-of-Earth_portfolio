@@ -85,10 +85,11 @@ const SkillsTab: React.FC = () => {
             ))}
             </div> 
         </nav>
-          
-        {/* Skills */}
+
         <SkillCarousel skillGroups={skillGroups}/>
+        
     </div>
+
   )
 }
 

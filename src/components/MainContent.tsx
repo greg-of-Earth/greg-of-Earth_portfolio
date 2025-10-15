@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence} from "framer-motion";
 import ProjectsTab from "./ProjectsTab";
 import EducationTab from "./EducationTab";
@@ -48,7 +48,7 @@ const MainContent: React.FC<MainContentProps> = ( { className }) => {
         </nav>
 
         {/* animation */}
-        <div className="relative">
+        <div className="relative w-full">
             <AnimatePresence mode="wait">
                 <motion.section
                     key={activeTab}
