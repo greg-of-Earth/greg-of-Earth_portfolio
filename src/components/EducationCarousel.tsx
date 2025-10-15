@@ -27,7 +27,7 @@ const EducationCarousel: React.FC<EducationCarouselProps> = ({ education }) => {
     return (
         <div className="relative flex w-full items-center justify-center px-12">
             <AnimatePresence mode="wait">
-                <motion.div
+                {education[index] && (<motion.div
                     key={education[index].school}
                     initial={{ opacity: 0, x: 50}}
                     animate={{ opacity: 1, x: 0 }}
@@ -67,8 +67,9 @@ const EducationCarousel: React.FC<EducationCarouselProps> = ({ education }) => {
                         )}
                     </div>
                 </motion.div>
+                )};
             </AnimatePresence>
-
+                        
             <button
                 onClick={prev}
                 className="absolute left-0 top-1/2 -translate-y-1/2 bg-cyan-500 text-white p-2 rounded-full shadow hover:bg-cyan-600 transition"

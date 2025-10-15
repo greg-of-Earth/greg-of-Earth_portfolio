@@ -26,7 +26,7 @@ const AwardsCarousel: React.FC<AwardsCarouselProps> = ({ awards }) => {
   return (
     <div className="relative flex w-full items-center justify-center px-12">
       <AnimatePresence mode="wait">
-        <motion.div
+        {awards[index] && (<motion.div
           key={awards[index].title}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -37,6 +37,7 @@ const AwardsCarousel: React.FC<AwardsCarouselProps> = ({ awards }) => {
           <h3 className="text-xl font-semibold text-cyan-600 mb-2">{awards[index].title}</h3>
           <p className="text-gray-700">{awards[index].description}</p>
         </motion.div>
+        )};
       </AnimatePresence>
 
       {/* Navigation */}

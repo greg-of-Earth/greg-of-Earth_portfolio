@@ -22,7 +22,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ skillGroups }) => {
   return (
     <div className="relative w-full items-center justify-center px-12">
       <AnimatePresence mode="wait">
-        <motion.div
+        {skillGroups[index] && (<motion.div
           key={skillGroups[index].category}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -44,6 +44,7 @@ const SkillCarousel: React.FC<SkillCarouselProps> = ({ skillGroups }) => {
             ))}
           </div>
         </motion.div>
+        )};
       </AnimatePresence>
 
       {/* Carousel buttons */}
