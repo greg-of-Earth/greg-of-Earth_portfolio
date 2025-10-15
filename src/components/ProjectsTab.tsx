@@ -13,7 +13,7 @@ const PROJECTS: Record<string, { title: string; description: string; tech: strin
             description: "Software lead in the development of a fully autonomous VTOL and conventional flight capable delivery and recovery RC drone",
             video: "/aero2.MP4",
             tech: ["STM32", "Python", "OpenCV", "RTOS", "Sensors"],
-            github: "https://github.com/yourusername/drone-project"
+            github: "https://github.com/greg-of-Earth/aero"
         },
         {
             title: "Motion Sensor Alarm",
