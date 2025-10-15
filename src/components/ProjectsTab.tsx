@@ -85,7 +85,7 @@ const ProjectsTab: React.FC = () => {
 
   return (
     <div>
-      <nav className="flex space-x-8 border-b border-gray-300 mb-6">
+      <nav className="flex space-x-8 border-b border-gray-300 mb-6 w-full justify-around items-center flex-nowrap gap-x-4">
         {SUB_TABS.map((tab) => (
             <button
                 key={tab}
