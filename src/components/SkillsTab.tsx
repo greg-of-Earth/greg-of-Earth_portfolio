@@ -71,7 +71,7 @@ const SkillsTab: React.FC = () => {
                 <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}
-                    className={`pb-2 font-medium text-lg relative transition-colors ${activeTab === tab ? 'text-cyan-600' : 'text-gray-500 hover:text-cyan-400'}`}
+                    className={`pb-2 font-medium text-sm md:text-lg relative transition-colors ${activeTab === tab ? 'text-cyan-600' : 'text-gray-500 hover:text-cyan-400'}`}
                 >
                     {tab}
                     {activeTab === tab && (
